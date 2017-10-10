@@ -18,7 +18,11 @@ export const store = new Vuex.Store({
         { name: 'Larsen', status: 'Working' },
         { name: 'Geneva', status: 'Finished' },
         { name: 'Jami', status: 'Planning' }
-      ]
+      ],
+      video: {
+        name: 'Scientist',
+        url: 'https://www.youtube.com/embed/RB-RcX5DS5A'
+      }
     },
     getters: {
         // saleProducts: (state) => {

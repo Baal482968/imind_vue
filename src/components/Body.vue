@@ -4,27 +4,16 @@
     <b-card no-body>
       <b-tabs small card ref="tabs" class="mx-auto w-50">
         <b-tab title="My Info">
-          <b-card :title="usersProfile.name"
-                  :img-src="usersProfile.picAddr"
-                  img-alt="Image"
-                  img-top
-                  tag="article"
-                  style="max-width: 20rem;"
-                  class="mb-2">
-            <p class="card-text">Email: {{usersProfile.email}}</p>
-            <p class="card-text">Position: {{usersProfile.position}}</p>
-            <p class="card-text">introduction:<br/> {{ usersProfile.introduction }}</p>
-            <b-button href="#" variant="primary">Go somewhere</b-button>
-          </b-card>
+          <user-info></user-info>
         </b-tab>
         <b-tab title="My Projects">
-          <projects></projects>
+          <user-projects></user-projects>
         </b-tab>
         <b-tab title="My Schedule">
-          Sibzamini!
+          <user-schedule></user-schedule>
         </b-tab>
-        <b-tab title="Messages">
-          I'm the last tab
+        <b-tab title="About Us">
+          <about-us></about-us>
         </b-tab>
       </b-tabs>
     </b-card>
@@ -32,11 +21,17 @@
 </template>
 
 <script>
-import Projects from './Projects.vue'
+import UserInfo from './UserInfo.vue';
+import UserProjects from './UserProjects.vue';
+import UserSchedule from './UserSchedule.vue';
+import AboutUs from './AboutUs.vue'
 
 export default {
   components:{
-    'projects': Projects
+    'user-info': UserInfo,
+    'user-projects': UserProjects,
+    'user-schedule': UserSchedule,
+    'about-us': AboutUs
   },
   data(){
     return{
