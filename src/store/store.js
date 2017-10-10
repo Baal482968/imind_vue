@@ -10,8 +10,15 @@ export const store = new Vuex.Store({
         name: 'Benedict Cumberbatch',
         position: 'Financial Manager',
         email: 'baal482968@gmail.com',
-        picAddr: 'http://cdn2-www.comingsoon.net/assets/uploads/2016/09/cumberbatchheader.jpg'
-      }
+        picAddr: 'http://cdn2-www.comingsoon.net/assets/uploads/2016/09/cumberbatchheader.jpg',
+        introduction: 'Benedict Timothy Carlton Cumberbatch CBE is an English actor who has performed in film, television, theatre and radio. He is the son of actors Timothy Carlton and Wanda Ventham.'
+      },
+      projects:[
+        { name: 'Dickerson', status: 'Working' },
+        { name: 'Larsen', status: 'Working' },
+        { name: 'Geneva', status: 'Finished' },
+        { name: 'Jami', status: 'Planning' }
+      ]
     },
     getters: {
         // saleProducts: (state) => {
