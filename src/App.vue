@@ -28,6 +28,6 @@ export default {
 
 <style>
 #app{
-  margin: 20px;
+  margin: auto;
 }
 </style>

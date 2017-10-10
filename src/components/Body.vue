@@ -2,7 +2,7 @@
   <div>
     <!-- Tabs with card integration -->
     <b-card no-body>
-      <b-tabs small card ref="tabs">
+      <b-tabs small card ref="tabs" class="mx-auto" style="width:60%;">
         <b-tab title="My Info">
           <b-card :title="usersProfile.name"
                   :img-src="usersProfile.picAddr"
@@ -48,5 +48,6 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+
 </style>
