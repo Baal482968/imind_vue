@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <vue-header></vue-header>
-    <vue-body></vue-body>
+    <router-view></router-view> <!-- body -->
     <vue-footer></vue-footer>
   </div>
 </template>
@@ -15,7 +15,6 @@ export default {
   name: 'app',
   components: {
     'vue-header': Header,
-    'vue-body': Body,
     'vue-footer': Footer
   },
   data () {
