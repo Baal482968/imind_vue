@@ -7,21 +7,17 @@
 </template>
 
 <script>
+// import children components in template
 import Header from './components/Header.vue'
 import Body from './components/Body.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
-  components: {
+  components: { // set components tags
     'vue-header': Header,
     'vue-footer': Footer
   },
-  data () {
-    return {
-
-    }
-  }
 }
 </script>
 
