@@ -1,7 +1,7 @@
 <template lang="html">
   <div id="single-project" class="mx-auto w-50">
-    <h1>Project Name: {{ project.name }}</h1>
-    <h2>Status: {{ project.status }}</h2>
+    <h1>Project Name: {{ getSingleProject.name }}</h1>
+    <h2>Status: {{ getSingleProject.status }}</h2>
   </div>
 </template>
 
@@ -9,8 +9,12 @@
 export default {
   data(){
     return{
-      project: this.$store.state.projects[0]
-      // Temporary, it will be change after DB setup
+      id: this.$route.params.id
+    }
+  },
+  computed: {
+    getSingleProject(){
+      return this.$store.getters.getSingleProject(this.id);
     }
   }
 }
