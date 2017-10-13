@@ -3,23 +3,21 @@
     <div class="jumbotron vertical-center">
       <b-container fluid class="w-25">
         <h1>Please Login</h1>
-        <b-row class="my-5">
-          <b-col sm="3">
-            <label for="input-large" class="my-3">Username:</label>
-          </b-col>
-          <b-col sm="9">
+        <b-row class="my-2">
+          <b-col sm="12" class="my-2">
             <b-form-input id="input-large" size="lg" type="text" placeholder="Enter your name"></b-form-input>
           </b-col>
-          <b-col sm="3">
-            <label for="input-large" class="my-3">Password:</label>
-          </b-col>
-          <b-col sm="9">
+          <b-col sm="12" class="my-2">
             <b-form-input id="input-large" size="lg" type="password" placeholder="Enter your password"></b-form-input>
           </b-col>
+          <b-col sm="12" class="my-2">
+    				<p>Forgot your password? <a href="#">click here</a></p>
+    				<p>New user? <a href="#">create new account</a></p>
+    			</b-col>
         </b-row>
-        <b-row class="my-2 justify-content-center align-items-center">
+        <b-row class="justify-content-center align-items-center">
           <div class="btn">
-            <b-button>Login</b-button>
+            <b-button size="lg" variant="primary">Login</b-button>
           </div>
         </b-row>
       </b-container>
@@ -35,6 +33,7 @@ export default {
 <style lang="css" scoped>
 h1{
   text-align: center;
+  margin-bottom: 10%;
 }
 .vertical-center {
   min-height: 60%;  /* Fallback for browsers do NOT support vh unit */
