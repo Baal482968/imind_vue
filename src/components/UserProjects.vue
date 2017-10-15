@@ -1,10 +1,9 @@
 <template lang="html">
   <div>
     <h1>Projects</h1>
-    <b-table striped hover :items="projects"></b-table>
     <ul>
       <li v-for="project in projects">
-        <router-link v-bind:to="'/project/'+ project.id">{{ project.name }}</router-link>
+        <router-link v-bind:to="'/project/'+ project.id"><h2>{{ project.name }}</h2></router-link>
         <p>Status: {{ project.status }}</p>
       </li>
     </ul>
@@ -21,5 +20,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+h1{
+  margin-bottom: 3%;
+}
 </style>

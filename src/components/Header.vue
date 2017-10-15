@@ -1,11 +1,13 @@
 <template lang="html">
   <div>
     <div>
-      <b-img center
-      src="https://i.imgur.com/A2ukCGP.png"
-      fluid alt="Responsive image"
-      id="pic"
-      />
+      <router-link to="/">
+        <b-img center
+        src="https://i.imgur.com/A2ukCGP.png"
+        fluid alt="Responsive image"
+        id="pic"
+        />
+      </router-link>
     </div>
   </div>
 </template>
