@@ -2,7 +2,7 @@
   <div>
     <!-- Tabs with card integration -->
     <b-card no-body>
-      <b-tabs small card ref="tabs" class="mx-auto w-75">
+      <b-tabs small card ref="tabs" class="mx-auto w-75 col-md-6 col-xs-12">
         <b-tab title="My Info">
           <user-info></user-info>
         </b-tab>
