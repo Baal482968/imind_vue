@@ -22,14 +22,23 @@ export const store = new Vuex.Store({
       video: {
         name: 'Scientist',
         url: 'https://www.youtube.com/embed/RB-RcX5DS5A'
-      }
+      },
+      projectNode:[
+        { x:55, y:12, r:40, stroke:'green', strokeWidth:4, fill:'yellow'},
+        { x:160, y:200, r:35, stroke:'yellow', strokeWidth:4, fill:'green'}
+      ]
     },
     getters: {
-        getSingleProject: (state, getters) => (id) => {
-          return state.projects.find(project => project.id === id)
-        }
+      getSingleProject: (state, getters) => (id) => {
+        return state.projects.find(project => project.id === id)
+      }
     },
     mutations: {
+      addNode: state => {
+        state.projectNode.push({
+          x:100, y:100, r:40, stroke:'green', strokeWidth:4, fill:'yellow'
+        });
+      }
         // reducePrice: (state, payload) => {
         //     state.products.forEach( product => {
         //         product.price -= payload
@@ -37,6 +46,9 @@ export const store = new Vuex.Store({
         // }
     },
     actions: {
+      addNode: context => {
+        context.commit('addNode');
+      }
         // reducePrice: (context, payload) => {
         //     setTimeout(function(){ // reach out for data
         //         context.commit('reducePrice', payload);
