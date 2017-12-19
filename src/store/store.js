@@ -14,18 +14,18 @@ export const store = new Vuex.Store({
         introduction: 'Benedict Timothy Carlton Cumberbatch CBE is an English actor who has performed in film, television, theatre and radio. He is the son of actors Timothy Carlton and Wanda Ventham.'
       },
       projects:[
-        { id:'a', name: 'Dickerson', status: 'Working' },
-        { id:'b', name: 'Larsen', status: 'Working' },
-        { id:'c', name: 'Geneva', status: 'Finished' },
-        { id:'d', name: 'Jami', status: 'Planning' }
+        { id:'a', name: 'Data Base', status: 'Finished' },
+        { id:'b', name: 'System Analysis Design', status: 'Keep updating' },
+        { id:'c', name: 'Software Engineering', status: 'Finished' },
+        { id:'d', name: 'Jami', status: 'Preparing' }
       ],
       video: {
         name: 'Scientist',
-        url: 'https://www.youtube.com/embed/RB-RcX5DS5A'
+        url: 'https://www.youtube.com/embed/wmVq66yaPV4'
       },
-      projectNode:[
-        { x:55, y:12, r:40, stroke:'green', strokeWidth:4, fill:'yellow'},
-        { x:160, y:200, r:35, stroke:'yellow', strokeWidth:4, fill:'green'}
+      courses:[
+        { id:'db001', name:'DataBase Lesson 1', img:'http://www.dbta.com/Images/Default.aspx?ImageID=19031', url:'https://www.youtube.com/embed/v=1kiCrKr3tw0&list=PLz7Y9Eb5_2q87p84bXA4e-LEWumrDNQo5&t=1391s&index=1' },
+        { id:'db002', name:'DataBase Lesson 2', img:'http://www.dbta.com/Images/Default.aspx?ImageID=19031', url:'https://www.youtube.com/embed/v=hEduupc3G8g&list=PLz7Y9Eb5_2q87p84bXA4e-LEWumrDNQo5&index=2'}
       ]
     },
     getters: {

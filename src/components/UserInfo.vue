@@ -9,7 +9,7 @@
     <p class="card-text">Email: {{usersProfile.email}}</p>
     <p class="card-text">Position: {{usersProfile.position}}</p>
     <p class="card-text">introduction:<br/> {{ usersProfile.introduction }}</p>
-    <b-button href="#" variant="primary">Go somewhere</b-button>
+    <b-button href="#" variant="primary">Edit</b-button>
   </b-card>
 </template>
 

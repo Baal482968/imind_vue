@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h1>Projects</h1>
+    <h1>My courses</h1>
     <ul>
       <li v-for="project in projects">
         <router-link v-bind:to="'/project/'+ project.id"><h2>{{ project.name }}</h2></router-link>

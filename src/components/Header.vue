@@ -3,9 +3,10 @@
     <div>
       <router-link to="/">
         <b-img center
-        src="https://i.imgur.com/A2ukCGP.png"
+        src="https://i.imgur.com/6xGSKiP.png"
         fluid alt="Responsive image"
-        id="pic"
+        id="pic" 
+        width="400 px"
         />
       </router-link>
     </div>

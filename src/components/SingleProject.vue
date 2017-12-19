@@ -1,17 +1,33 @@
 <template lang="html">
   <div id="single-project" class="mx-auto w-50">
-    <h1>Project Name: {{ getSingleProject.name }}</h1>
-    <h2>Status: {{ getSingleProject.status }}</h2>
+    <h1>{{ getSingleProject.name }}</h1>
+    <p>{{ getSingleProject.status }}</p>
+    <p>Current session: </p>
     <b-nav pills>
-      <b-nav-item v-on:click="addNode">Add node</b-nav-item>
-      <b-nav-item>Link</b-nav-item>
-      <b-nav-item>Another Link</b-nav-item>
-      <b-nav-item disabled>Disabled</b-nav-item>
+      <b-nav-item></b-nav-item>
+      <b-nav-item></b-nav-item>
+      <b-nav-item></b-nav-item>
+      <b-nav-item></b-nav-item>
     </b-nav>
-    <div class="board">
-      <svg width="1000" height="1000">
-        <circle v-for="node in getProjectNode" :cx="node.x" :cy="node.y" :r="node.r" :stroke="node.stroke" :stroke-width="node.strokeWidth" :fill="node.fill" />
-      </svg>
+    <div v-for="course in courses">
+      <b-card :title="course.name"
+          :img-src="course.img"
+          img-alt="Image"
+          img-top
+          tag="article"
+          style="max-width: 50rem;"
+          class="mb-6">
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk of the card's content.
+      </p>
+      <b-embed type="iframe"
+           aspect="16by9"
+           :src="course.url"
+           allowfullscreen
+      ></b-embed>
+      <b-button href="#" variant="primary">Like</b-button>
+      <b-button href="#" variant="primary">Unlike</b-button>
+      </b-card>
     </div>
   </div>
 </template>
@@ -30,8 +46,8 @@ export default {
     getSingleProject(){
       return this.$store.getters.getSingleProject(this.id);
     },
-    getProjectNode(){
-      return this.$store.state.projectNode;
+    courses(){
+      return this.$store.state.courses;
     }
   },
   methods: {
@@ -40,6 +56,8 @@ export default {
     }
   }
 }
+
+
 </script>
 
 <style lang="css" scoped>
