@@ -7,7 +7,7 @@
           <user-info></user-info>
         </b-tab>
         <b-tab title="My Learning Courses">
-          <user-courses></user-courses>
+          <user-learning-courses></user-learning-courses>
         </b-tab>
         <b-tab title="My Completed Courses">
           <user-completed-courses></user-completed-courses>
@@ -15,8 +15,8 @@
         <b-tab title="My Notes">
           <user-notes></user-notes>
         </b-tab>
-        <b-tab title="My Accomplish">
-          <about-us></about-us>
+        <b-tab title="All courses">
+          <all-courses></all-courses>
         </b-tab>
       </b-tabs>
     </b-card>
@@ -25,16 +25,18 @@
 
 <script>
 import UserInfo from './UserInfo.vue';
-import UserCourses from './UserCourses.vue';
+import UserLearningCourses from './UserLearningCourses.vue';
 import UserCompletedCourses from './UserCompletedCourses.vue';
 import UserNotes from './UserNotes.vue'
+import AllCourses from './AllCourses.vue'
 
 export default {
   components:{
     'user-info': UserInfo,
-    'user-courses': UserCourses,
+    'user-learning-courses': UserLearningCourses,
     'user-completed-courses': UserCompletedCourses,
-    'user-notes': UserNotes
+    'user-notes': UserNotes,
+    'all-courses': AllCourses
   },
   data(){
     return{

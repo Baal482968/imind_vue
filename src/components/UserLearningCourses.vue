@@ -1,8 +1,8 @@
 <template lang="html">
   <div>
-    <h1>My completed courses</h1>
+    <h1>My learning courses</h1>
     <ol>
-      <li v-for="course in completedCourses">
+      <li v-for="course in learningCourses">
         <b-card :title="course.name"
           :img-src="course.img"
           img-alt="Image"
@@ -29,12 +29,16 @@
 <script>
 export default {
   computed: {
-    completedCourses(){
-      return this.$store.state.completedCourses;
+    learningCourses(){
+      return this.$store.state.learningCourses;
     }
   }
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+h1{
+  margin-bottom: 3%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 </style>
