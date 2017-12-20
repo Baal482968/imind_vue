@@ -6,13 +6,16 @@
         <b-tab title="My Info">
           <user-info></user-info>
         </b-tab>
-        <b-tab title="My Projects">
-          <user-projects></user-projects>
+        <b-tab title="My Learning Courses">
+          <user-courses></user-courses>
         </b-tab>
-        <b-tab title="My Schedule">
-          <user-schedule></user-schedule>
+        <b-tab title="My Completed Courses">
+          <user-completed-courses></user-completed-courses>
         </b-tab>
-        <b-tab title="About Us">
+        <b-tab title="My Notes">
+          <user-notes></user-notes>
+        </b-tab>
+        <b-tab title="My Accomplish">
           <about-us></about-us>
         </b-tab>
       </b-tabs>
@@ -22,16 +25,16 @@
 
 <script>
 import UserInfo from './UserInfo.vue';
-import UserProjects from './UserProjects.vue';
-import UserSchedule from './UserSchedule.vue';
-import AboutUs from './AboutUs.vue'
+import UserCourses from './UserCourses.vue';
+import UserCompletedCourses from './UserCompletedCourses.vue';
+import UserNotes from './UserNotes.vue'
 
 export default {
   components:{
     'user-info': UserInfo,
-    'user-projects': UserProjects,
-    'user-schedule': UserSchedule,
-    'about-us': AboutUs
+    'user-courses': UserCourses,
+    'user-completed-courses': UserCompletedCourses,
+    'user-notes': UserNotes
   },
   data(){
     return{

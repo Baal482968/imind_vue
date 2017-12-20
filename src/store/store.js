@@ -7,11 +7,11 @@ export const store = new Vuex.Store({
     strict: true,
     state: {
       usersProfile: {
-        name: 'Benedict Cumberbatch',
+        name: 'Albert Einstein',
         position: 'Financial Manager',
         email: 'baal482968@gmail.com',
-        picAddr: 'http://cdn2-www.comingsoon.net/assets/uploads/2016/09/cumberbatchheader.jpg',
-        introduction: 'Benedict Timothy Carlton Cumberbatch CBE is an English actor who has performed in film, television, theatre and radio. He is the son of actors Timothy Carlton and Wanda Ventham.'
+        picAddr: 'https://pbs.twimg.com/media/BmB3-oeCUAAO7M6.jpg',
+        introduction: 'Albert Einstein was a German-born theoretical physicist. Einstein developed the theory of relativity, one of the two pillars of modern physics. Einstein\'s work is also known for its influence on the philosophy of science.'
       },
       projects:[
         { id:'a', name: 'Data Base', status: 'Finished' },
