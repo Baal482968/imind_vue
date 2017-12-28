@@ -1,8 +1,8 @@
 <template lang="html">
   <div>
     <!-- Tabs with card integration -->
-    <b-card no-body>
-      <b-tabs small card ref="tabs" class="mx-auto w-75 col-md-6 col-xs-12">
+    <b-card no-body id="body">
+      <b-tabs small card ref="tabs" class="mx-auto w-75 col-md-6 col-xs-12" id="tabs">
         <b-tab title="My Info">
           <user-info></user-info>
         </b-tab>
@@ -52,5 +52,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
+#body{
+   background: linear-gradient(to right, #8e9eab, #eef2f3); 
+}
+#tabs{
+   background: linear-gradient(to left, #ece9e6, #ffffff)!important; 
+}
 </style>

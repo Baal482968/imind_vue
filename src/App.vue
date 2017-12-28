@@ -24,5 +24,6 @@ export default {
 <style>
 #app{
   margin: auto;
+   background: linear-gradient(to right, #8e9eab, #eef2f3); 
 }
 </style>

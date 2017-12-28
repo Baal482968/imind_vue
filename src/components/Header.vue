@@ -1,6 +1,5 @@
 <template lang="html">
-  <div>
-    <div>
+  <div id="header">
       <router-link to="/">
         <b-img center
         src="https://i.imgur.com/6xGSKiP.png"
@@ -9,7 +8,6 @@
         width="400 px"
         />
       </router-link>
-    </div>
   </div>
 </template>
 
@@ -19,6 +17,7 @@ export default {
 </script>
 
 <style lang="css">
+
 #pic{
   max-height: 100px;
 }

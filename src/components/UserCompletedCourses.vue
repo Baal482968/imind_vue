@@ -11,7 +11,7 @@
           style="max-width: 50rem;"
           class="mb-6">
         <p class="card-text">
-          Some quick example text to build on the card title and make up the bulk of the card's content.
+          {{course.content}}
         </p>
         <b-embed type="iframe"
            aspect="16by9"
