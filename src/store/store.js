@@ -14,10 +14,10 @@ export const store = new Vuex.Store({
         introduction: 'Albert Einstein was a German-born theoretical physicist. Einstein developed the theory of relativity, one of the two pillars of modern physics. Einstein\'s work is also known for its influence on the philosophy of science.'
       },
       catalog:[
-        { id:'a', name: 'Data Base', status: 'Finished' },
-        { id:'b', name: 'System Analysis Design', status: 'Keep updating' },
-        { id:'c', name: 'Software Engineering', status: 'Finished' },
-        { id:'d', name: 'Jami', status: 'Preparing' }
+        { id: 'a', name: 'Data Base', img: 'http://www.dbta.com/Images/Default.aspx?ImageID=19031'},
+        { id: 'b', name: 'System Analysis Design', img: 'http://slideplayer.com/slide/8102272/25/images/1/Systems+Analysis+and+Design.jpg'},
+        { id: 'c', name: 'Software Engineering'},
+        { id: 'd', name: 'Jami'}
       ],
       video: {
         name: 'Scientist',

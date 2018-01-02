@@ -17,13 +17,13 @@ export default {
   components: { // set components tags
     'vue-header': Header,
     'vue-footer': Footer
-  },
+  }
 }
 </script>
 
 <style>
 #app{
   margin: auto;
-   background: linear-gradient(to right, #8e9eab, #eef2f3); 
+   background: linear-gradient(to right, #8e9eab, #eef2f3);
 }
 </style>
